@@ -1,6 +1,6 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0.5-alpine3.14@sha256:140e439c1745f8241b2921b3cc970eb0316bf05c261e9bbfd2f51562909f6521 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0.6-alpine3.14@sha256:f98c21199f4bbb29dfb3e1af8ff62068216a39ebdb837696745fb75ce7e45c52 AS base
 RUN set -x && \
     addgroup nonroot && \
     adduser -S -D -H -s /sbin/nologin -G nonroot -g nonroot nonroot
